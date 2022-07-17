@@ -1,0 +1,29 @@
+<div class="column-layout group">
+  <igx-grid [data]="dataSource3Table1" primaryKey="id" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+    <igx-grid-toolbar>
+      <igx-grid-toolbar-actions>
+        <igx-grid-toolbar-pinning>true</igx-grid-toolbar-pinning>
+        <igx-grid-toolbar-hiding>true</igx-grid-toolbar-hiding>
+        <igx-grid-toolbar-exporter></igx-grid-toolbar-exporter>
+      </igx-grid-toolbar-actions>
+      <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+    </igx-grid-toolbar>
+    <igx-column header="id" field="id" dataType="number" [sortable]="true" [groupable]="true" title="id"></igx-column>
+    <igx-column header="姓" field="姓" dataType="string" [pinned]="true" [sortable]="true" [groupable]="true" title="姓"></igx-column>
+    <igx-column header="名" field="名" dataType="string" [pinned]="true" [sortable]="true" [groupable]="true" title="名"></igx-column>
+    <igx-column header="姓（カタカナ）" field="姓（カタカナ）" dataType="string" [sortable]="true" [groupable]="true" [hidden]="true" title="姓（カタカナ）"></igx-column>
+    <igx-column header="名（カタカナ）" field="名（カタカナ）" dataType="string" [sortable]="true" [groupable]="true" [hidden]="true" title="名（カタカナ）"></igx-column>
+    <igx-column header="性別" field="性別" dataType="string" [sortable]="true" [groupable]="true" title="性別"></igx-column>
+    <igx-column header="携帯電話" field="携帯電話" dataType="string" [sortable]="true" [groupable]="true" title="携帯電話"></igx-column>
+    <igx-column header="メールアドレス" field="メールアドレス" dataType="string" [sortable]="true" [groupable]="true" title="メールアドレス"></igx-column>
+    <igx-column header="郵便番号" field="郵便番号" dataType="string" [sortable]="true" [groupable]="true" title="郵便番号"></igx-column>
+    <igx-column header="住所" field="住所" dataType="string" [sortable]="true" [groupable]="true" title="住所"></igx-column>
+    <igx-column header="市区町村" field="市区町村" dataType="string" [sortable]="true" [groupable]="true" title="市区町村"></igx-column>
+    <igx-column header="__1" field="__1" dataType="string" [sortable]="true" [groupable]="true" [hidden]="true" title="__1"></igx-column>
+    <igx-column header="__2" field="__2" dataType="string" [sortable]="true" [groupable]="true" [hidden]="true" title="__2"></igx-column>
+    <igx-column header="__3" field="__3" dataType="string" [sortable]="true" [groupable]="true" [hidden]="true" title="__3"></igx-column>
+    <igx-column header="生年月日" field="生年月日" dataType="string" [sortable]="true" [groupable]="true" title="生年月日"></igx-column>
+    <igx-column header="年齢" field="年齢" dataType="number" [sortable]="true" [groupable]="true" title="年齢"></igx-column>
+    <igx-column header="血液型" field="血液型" dataType="string" [sortable]="true" [groupable]="true" title="血液型"></igx-column>
+  </igx-grid>
+</div>
